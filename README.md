@@ -1,29 +1,18 @@
-= Description =
 zM Upload is a class used to ease the implemention of handling file
 uploads in WordPress.
 
-= Usage =
+Usage
+=
 
-<?php
-
+<pre>
+// Some where in php land
 include_once( 'zm-upload/MediaUpload.php' );
 
 if ( $_POST ) {
-
     $tmp = new MediaUpload;
-    $a = $tmp->saveUpload( $field_name='my_file' );
-
-    var_dump( $a );
-    die();
+    $attachment_id = $tmp->saveUpload( $field_name='my_file' );
 }
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-    <input type="file" name="my_file" />
-    <p><input type="submit" name="action" /></p>
-</form>
-
+</pre>
 
 
 Enjoy.
@@ -34,7 +23,7 @@ http://zanematthew.com/
 
 License:
 
-  Copyright 2011 Graph Paper Press (support@graphpaperpress.com)
+  Copyright 2012 Zane M. Kolnik
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as
