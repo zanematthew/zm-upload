@@ -1,6 +1,11 @@
 zM Upload is a class used to ease the implemention of handling file
 uploads in WordPress.
 
+Demo
+=
+[Video Demo](http://www.youtube.com/watch?v=Jpz21O3mPJE&feature=plcp)
+
+
 Usage
 =
 
