@@ -24,13 +24,21 @@ Class ImageMeta {
 
         switch( $value ){
             case 'keywords':
-                return $iptc['2#025'];
+                if ( isset( $iptc['2#025'] ) )
+                    return $iptc['2#025'];
+
             case 'city':
-                return $iptc['2#090'][0];
+                if ( isset( $iptc['2#090'][0] ) )
+                    return $iptc['2#090'][0];
+
             case 'region':
-                return $iptc['2#095'][0];
+                if ( isset( $iptc['2#095'][0] ) )
+                    return $iptc['2#095'][0];
+
             case 'country':
-                return $iptc['2#101'][0];
+                if ( isset( $iptc['2#101'][0] ) )
+                    return $iptc['2#101'][0];
+
             default:
                 return false;
         }
