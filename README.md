@@ -4,7 +4,7 @@ uploads in WordPress.
 Demo
 =
 [Video Demo](http://www.youtube.com/watch?v=Jpz21O3mPJE&feature=plcp)
-
+[Integrated with Uploadify](http://bmxraceevents.com/events/new)
 
 Usage
 =
